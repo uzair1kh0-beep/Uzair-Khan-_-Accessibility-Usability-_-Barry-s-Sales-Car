@@ -1,75 +1,65 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-GB">
 <head>
-    <meta charset="utf-8">
-    <title>Barry's Car Sales</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse used cars at Barry's Car Sales in Hatfield, Hertfordshire.">
+  <title>Used cars for sale | Barry's Car Sales</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-<header>
-    <div>
-        <div>
-            <h1>Barry's Car Sales</h1>
-            <div>Local quality used cars at sensible prices</div>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+    <div class="header-inner">
+        <div class="brand">
+            <a class="brand-link" href="index.html" aria-label="Barry's Car Sales home"><span class="brand-name">Barry's Car Sales</span></a>
+            <p class="tagline">Local quality used cars at sensible prices</p>
         </div>
-        <div>Call 01707 111 222</div>
-    </div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="enquiry.html">Contact</a>
-    </nav>
+        <p class="phone"><span aria-hidden="true">Call:</span> <a href="tel:+441707111222">01707 111 222</a></p>
+  </div>
+        <nav class="primary-nav" aria-label="Main navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="about.html">About us</a>
+            <a href="enquiry.html">Contact and enquiries</a>
+        </nav>
 </header>
+    
+<main id="main-content" class="container">
+  <section class="hero" aria-labelledby="hero-title">
+    <p class="eyebrow">Independent local dealer · Hatfield</p>
+    <h1 id="hero-title">Find your next car today</h1>
+    <p>Browse a changing selection of hatchbacks, family cars, SUVs and electric vehicles at affordable prices. Our team can help with vehicle questions, test drives and part exchange.</p>
+    <a class="button-link" href="#cars">Browse available cars</a>
+  </section>
 
-<main>
-    <section>
-        <h2>Find your next car today</h2>
-        <p>Barry's Car Sales is an independent used-car dealer serving Hertfordshire and the surrounding area. We stock a changing selection of hatchbacks, family cars, SUVs, and electric vehicles at affordable prices.</p>
-        <a href="#cars">View current stock</a>
-    </section>
-
-    <h4 id="cars">Cars currently available</h4>
-
-    <div>
-        <div>
-            <img src="hatchback.jpg">
-            <h3>2019 Hatch 1.0</h3>
-            <div>£8,495</div>
-            <p>42,000 miles · Petrol · Manual · 5 doors</p>
-            <a href="enquiry.html">Click here</a>
-        </div>
-
-        <div>
-            <img src="suv.jpg" alt="A blue SUV for sale">
-            <h3>2020 Trail 1.5</h3>
-            <div>£12,950</div>
-            <p>31,500 miles · Petrol · Automatic · 5 doors</p>
-            <div id="suv-enquiry">Ask about this car</div>
-        </div>
-
-        <div>
-            <img src="saloon.jpg" alt="car">
-            <h3>2018 Audi S4</h3>
-            <div>£9,250</div>
-            <p>58,100 miles · Diesel · Manual · 4 doors</p>
-            <a href="enquiry.html">More</a>
-        </div>
-
-        <div>
-            <img src="electric.jpg" alt="White electric car connected to a charging point">
-            <h3>2021 City-e</h3>
-            <div>£14,995</div>
-            <p>24,700 miles · Electric · Automatic · 5 doors</p>
-            <a href="enquiry.html">Enquire about the 2021 City-e</a>
-        </div>
+  <section id="cars" aria-labelledby="stock-title">
+      <div class="section-heading">
+          <div><p class="eyebrow">Our current selection</p><h2 id="stock-title">Cars currently available</h2></div>
+          <p class="stock-note">Stock can change. Please confirm details before travelling.</p>
+      </div>
+      <div class="car-grid">
+          <article class="car-card">
+              <img src="hatchback.jpg" alt="Hatchback offered for sale" width="300" height="200">
+              <div class="car-card-body"><h3>2019 Hatch 1.0</h3><p class="price">£8,495</p><p class="specs">42,000 miles <span aria-hidden="true">·</span> Petrol <span aria-hidden="true">·</span> Manual <span aria-hidden="true">·</span> 5 doors</p><a class="text-link" href="enquiry.html?car=hatchback">Enquire about the 2019 Hatch 1.0 <span aria-hidden="true">→</span></a></div>
+      </article>
+      <article class="car-card">
+        <img src="suv.jpg" alt="Blue SUV offered for sale" width="300" height="200">
+        <div class="car-card-body"><h3>2020 Trail 1.5</h3><p class="price">£12,950</p><p class="specs">31,500 miles <span aria-hidden="true">·</span> Petrol <span aria-hidden="true">·</span> Automatic <span aria-hidden="true">·</span> 5 doors</p><a class="text-link" href="enquiry.html?car=suv">Enquire about the 2020 Trail 1.5 <span aria-hidden="true">→</span></a></div>
+      </article>
+      <article class="car-card">
+        <img src="saloon.jpg" alt="Saloon car offered for sale" width="300" height="200">
+        <div class="car-card-body"><h3>2018 Audi S4</h3><p class="price">£9,250</p><p class="specs">58,100 miles <span aria-hidden="true">·</span> Diesel <span aria-hidden="true">·</span> Manual <span aria-hidden="true">·</span> 4 doors</p><a class="text-link" href="enquiry.html?car=audi">Enquire about the 2018 Audi S4 <span aria-hidden="true">→</span></a></div>
+      </article>
+      <article class="car-card">
+        <img src="electric.jpg" alt="White electric car connected to a charging point" width="300" height="200">
+        <div class="car-card-body"><h3>2021 City-e</h3><p class="price">£14,995</p><p class="specs">24,700 miles <span aria-hidden="true">·</span> Electric <span aria-hidden="true">·</span> Automatic <span aria-hidden="true">·</span> 5 doors</p><a class="text-link" href="enquiry.html?car=electric">Enquire about the 2021 City-e <span aria-hidden="true">→</span></a></div>
+      </article>
     </div>
-
-    <p>Stock changes regularly. Vehicle details are believed to be correct but should be confirmed before purchase.</p>
+  </section>
+    <aside class="notice" aria-label="Important stock information"><strong>Before you visit:</strong> vehicle details are believed to be correct but should be confirmed with our team. We aim to answer enquiries within two working days.</aside>
 </main>
 
-<footer>
-    Barry's Car Sales · 15 Chipmunk Close, Hatfield, Hertfordshire · 01707 111 222
-</footer>
+<footer class="site-footer"><div class="container footer-inner"><div><strong>Barry's Car sales</strong><p>15 Chipmunk Close, Hatfield, Hertfordshire</p></div><div><p><a href="tel:+441707111222">01707 111 222</a></p><p><a href="enquiry.html">Contact our team</a></p></div></div><p class="copyright">© Barry's Car Sales · Please confirm vehicle details before purchase.</p></footer>            
 </body>
 </html>
